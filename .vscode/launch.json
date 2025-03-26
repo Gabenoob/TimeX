@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "python":"/home/wwz/anaconda3/envs/TimeXer/bin/python",
+            "args":[
+                "--is_training","1" ,
+                "--task_name", "long_term_forecast" ,
+                "--root_path", "./dataset/M5" ,
+                "--data_path", "df_raw.pkl" ,
+                "--model_id", "M5_..." ,
+                "--model", "TimeXer" ,
+                "--data", "M5" ,
+                "--features", "MS" ,
+                "--target", "HOBBIES_1_008_CA_1",
+                "--seq_len", "192" ,
+                "--label_len", "64" ,
+                "--pred_len", "28" ,
+                "--e_layers", "3" ,
+                "--enc_in", "3" ,
+                "--dec_in", "3" ,
+                "--c_out", "1" ,
+                "--des", "$des" ,
+                "--patch_len", "24" ,
+                "--d_model", "512" ,
+                "--d_ff", "512" ,
+                "--batch_size", "4",
+                "--itr", "1"
+            ]
+            
+        }
+    ]
+}
