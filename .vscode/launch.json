@@ -14,6 +14,7 @@
             "python":"/home/wwz/anaconda3/envs/TimeXer/bin/python",
             "args":[
                 "--is_training","1" ,
+                "--train_epochs", "5",
                 "--task_name", "long_term_forecast" ,
                 "--root_path", "./dataset/M5" ,
                 "--data_path", "df_raw.pkl" ,
@@ -23,7 +24,7 @@
                 "--features", "MS" ,
                 "--target", "HOBBIES_1_008_CA_1",
                 "--seq_len", "192" ,
-                "--label_len", "64" ,
+                "--label_len", "0" ,
                 "--pred_len", "28" ,
                 "--e_layers", "3" ,
                 "--enc_in", "3" ,
@@ -33,7 +34,7 @@
                 "--patch_len", "24" ,
                 "--d_model", "512" ,
                 "--d_ff", "512" ,
-                "--batch_size", "4",
+                "--batch_size", "10",
                 "--itr", "1"
             ]
             

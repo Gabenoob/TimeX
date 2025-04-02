@@ -1,0 +1,26 @@
+
+512模型
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl192_ll0_pl28_dm512_nh8_el3_dl1_df512_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:33.79875564575195, mae:3.404482126235962
+
+只有销售量 1024
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl192_ll0_pl28_dm1024_nh8_el3_dl1_df1024_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:34.23733139038086, mae:3.4354960918426514
+
+
+加了节假日后 1024
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl192_ll0_pl28_dm1024_nh8_el3_dl1_df1024_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:33.413394927978516, mae:3.4776055812835693
+
+weekday和节假日和销售量 1024
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl192_ll0_pl28_dm1024_nh8_el3_dl1_df1024_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:37.25183868408203, mae:3.4191644191741943
+
+与以上相同，长度变为600
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl500_ll0_pl28_dm1024_nh8_el3_dl1_df1024_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:36.18541717529297, mae:3.593778371810913
+
+与以上相同，加入labellength=70
+long_term_forecast_M5_600_24_TimeXer_M5_ftMS_sl500_ll70_pl28_dm1024_nh8_el3_dl1_df1024_expand2_dc4_fc1_ebtimeF_dtTrue_Timexer-MS_0  
+mse:34.75354766845703, mae:3.6750552654266357
+
